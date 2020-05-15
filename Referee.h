@@ -13,28 +13,15 @@ namespace SnakeGame
 			, xPoint(xP)
 			, yPoint(yP)
 		{}
-		void showResult()
-		{
-			settings.SetCursorPosition(xPoint, yPoint);
-			std::cout << "Points";
-			settings.SetCursorPosition(xPoint+3, yPoint+1);
-			std::cout << point;
-		}
-		void incrementPoint(void) 
-		{
-			point++;
-		}
-		void resetPoint(void) 
-		{
-			point = 0;
-		}
+		void showResult();
+		void incrementPoint(void);
+		void resetPoint(void);
+
 	private:
 		unsigned int point;
 		unsigned int xPoint;
 		unsigned int yPoint;
+
 		Settings settings;
-
-
 	};
-
 }

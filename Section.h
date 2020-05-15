@@ -15,23 +15,10 @@ namespace SnakeGame
             : x(inX)
             , y(inY)
         {}
-
-        void ClearPoint()
-        {
-            settings.SetCursorPosition(x, y);
-            std::cout << ' ';
-        }
-       
-
-        void DrawPoint(char symbol)
-        {
-            settings.SetCursorPosition(x, y);
-            std::cout << symbol;
-        }
+        void ClearPoint(); 
+        void DrawPoint(char symbol);
 
     private:
-        Settings settings;
-        
+        Settings settings;        
     };
-
 }
